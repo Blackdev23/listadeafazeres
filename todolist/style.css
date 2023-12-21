@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(3,164,63);
+    background: linear-gradient(90deg, rgba(3,164,63,1) 0%, rgba(0,255,254,1) 100%);
+}
+
+button{
+    background-color: snow;
+    color: gray;
+    border: 2px solid gray;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: gray;
+    color: snow;
+}
+
+button:hover > i{
+    color: snow;
+}
+
+button i {
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input,select{
+    padding: 0.25rem 0.75rem;
+}
+
+.lista-container{
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: #fdfdfd;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.lista-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#adicionar-form, #editar-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#adicionar-form p, #editar-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.lista-control{
+    display: flex;
+}
+
+.lista-control input{
+    margin-right: .3rem;
+    flex: 1;
+}
+
+#cancelar-edit{
+    margin-top: 1rem;
+}
+
+.esconder{
+    display: none;
+}
+
+
+.tarefas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.tarefas h3{
+    flex: 1;
+    font-size: 1rem;
+}
+
+.tarefas button{
+    margin-left: 0.4rem;
+}
+
+.feito{
+    background-color: gray;
+    font-style: bold;
+}
+
+.feito h3{
+    text-decoration: line-through;
+}
